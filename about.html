@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Ezralyn Castro</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-MZkNQnOEKz04Fy4d5cAv+eEdHOSeQmEWB+61oMfQddGfM2Tz7mSY/HRR84P5Q+yEzssz5+9Zim2XcyvB8aYy0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+   body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #F4E9DC;
+  color: #2e2e2e;
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  color: #8c8a6f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  color: #8c8a6f;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #CECCB2;
+  padding-bottom: 10px;
+}
+
+.profile-pic {
+  width: 200px;
+  height: auto;
+  border-radius: 0; /* Removes circular shape */
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.header-text h1 {
+  margin: 0 0 8px 0;
+  font-size: 2.4rem;
+  color: #8c8a6f;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contact-info {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact-info span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.6rem;
+  color: #CECCB2;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #8c8a6f;
+}
+
+section {
+  background-color: #f9f6f1;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-top: 35px;
+  color: #4e4e3f;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  border-left: 5px solid #CECCB2;
+  padding-left: 10px;
+  color: #8c8a6f;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.skill-item {
+  flex: 1 1 45%;
+  background: #f1eee4;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #8c8a6f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-percent {
+  background: #CECCB2;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  min-width: 40px;
+  text-align: center;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding-left: 25px;
+  border-left: 3px solid #CECCB2;
+}
+
+.timeline-event {
+  background-color: #fdfaf6;
+  border: 1px solid #e6e3d9;
+  border-left: 6px solid #CECCB2;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-event:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(142, 141, 114, 0.2);
+}
+
+.timeline-event h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #6b6a56;
+}
+
+.timeline-event p {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #4a4a3b;
+}
+
+.list-section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.list-section li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-list {
+    flex-direction: column;
+  }
+
+  .skill-item {
+    flex: 1 1 100%;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <a href="index.html" class="back-link">&larr; Back to Main Page</a>
+
+ <header class="header">
+  <img src="images/forabout.png" alt="Ezralyn Castro Profile Picture" class="profile-pic" />
+  <div class="header-text">
+    <h1>Ezralyn Castro</h1>
+    <p>Web developer with a focus on WordPress, UI/UX design, and front-end tech like HTML, CSS, JavaScript, 
+      and PHP. I also bring skills in SEO, Google Analytics, and content creation to help boost digital presence. Known for being adaptable, detail-oriented, 
+      and a strong communicator—always ready to learn and create meaningful web experiences.</p>
+    <div class="contact-info">
+      <span><strong>Email:</strong> ezralyn.castro@example.com</span>
+      <span><strong>Phone:</strong> +63 912 345 6789</span>
+      <span><strong>Location:</strong> Pampanga, Philippines</span>
+    </div>
+ <div class="social-icons">
+  <a href="https://www.linkedin.com/in/ezralyn-castro-b82759314/" target="_blank">
+  <i class="fa fa-linkedin-square" style="font-size:30px; color:#CECBB2;"></i>
+</a>
+<a href="https://github.com/CSezra" target="_blank">
+  <i class="fa fa-github" style="font-size:30px; color:#CECBB2;"></i>
+</a>
+<a href="https://www.instagram.com/cstrezzrawrr/" target="_blank">
+  <i class="fa fa-instagram" style="font-size:30px; color:#CECBB2;"></i>
+</a>
+
+</div>
+  </div>
+</header>
+
+    <section>
+  <h2>My Journey in Web Development</h2>
+  <div class="timeline">
+    <div class="timeline-event">
+      <h3>Chapter 1: The Beginning <span style="font-weight: normal;">(2009 – 2025)</span></h3>
+      <p>
+        It all started in 2009 at Cabetican Elementary School, where my curiosity about how things work 
+        first took root. Although my senior high school major in Humanities and Social Sciences wasn’t directly 
+        aligned with my current field, the adjustment was challenging at first—but with determination and hard work, 
+        I eventually excelled. This journey led me to graduate in March 30, 2025 with a <strong> Bachelor of Science in Information Technology </strong>, specializing in <strong> Web Development </strong> from <strong>Holy Angel University</strong>. 
+        My education became the solid foundation for turning ideas into meaningful digital experiences.
+      </p>
+    </div>
+    <div class="timeline-event">
+      <h3>Chapter 2: Real-World Growth <span style="font-weight: normal;">(2019 – 2024)</span></h3>
+      <p>
+        My first taste of the professional world was as an <strong> Administrative Assistant </strong> 
+        at the City Social Welfare and Development Office in 2019. But <strong>my passion soon led me to hands-on 
+        work—building websites, designing user experiences, and mastering SEO</strong> as a <strong> WordPress Developer & SEO Specialist </strong> at <strong>The Bean Co. Coffee</strong>, followed by an internship at <strong> PBO GLOBAL </strong>. 
+        Each project sharpened my skills and fueled my drive.
+      </p>
+    </div>
+    <div class="timeline-event">
+      <h3>Chapter 3: Lifelong Learning & Future Vision<span style="font-weight: normal;"></span></h3>
+      <p>
+        Understanding that technology never stands still, I pursued <strong>certifications</strong> in <strong>Google Analytics, Cisco Cyber Ops, HubSpot SEO, and RedHat</strong>. 
+        Attending <strong>seminars</strong> on <strong>blockchain, AI, and cybersecurity</strong> expanded my perspective, preparing me to innovate and create in an ever-evolving digital landscape. 
+        Today, I’m dedicated to crafting intuitive, impactful web solutions—always ready for the next challenge.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <section class="list-section">
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <h3>Tech & Creativity</h3>
+        <li>Building and experimenting with websites using HTML, CSS, and JavaScript</li>
+        <li>Exploring and studying new programming languages</li>
+        <li>Staying in the loop with the latest tech trends and tools</li>
+        <li>Blogging about ideas, experiences, or tech-related topics</li>
+      </ul>
+      <ul>
+        <h3>Leisure & Exploration</h3>
+        <li>Watching documentaries</li>
+        <li>Visiting cafes & Reading thriller books</li>
+      </ul>
+    </section>
+
+    <section class="list-section">
+      <h2>Certifications & Seminars </h2>
+      <ul>
+        <h3>Google Digital Academy (Skillshop) | 2023</h3>
+        <li>Use Google Analytics For Your Business</li>
+        <li>Get Started Using Google Analytics</li>
+        <li>Google Analytics Individual Qualification</li>
+      </ul>
+      <ul>
+        <h3>CISCO</h3>
+        <li>Introduction To IoT | 2021</li>
+        <li>Introduction To Cybersecurity | 2021</li>
+        <li>Cisco Certified Network Associate Cyber Ops (CCNA) | 2023</li>
+      </ul>
+      <ul>
+        <h3>HUBSPOT & REDHAT</h3>
+        <li>SEO (Search Engine Optimization) I & II | 2023</li>
+        <li>Certified System Administrator (RHCSA) | 2021</li>
+      </ul>
+      <ul>
+        <h3>Blockchain & Cybersecurity</h3>
+        <li>3rd Regional Blockchain Conference: Cybersecurity in the Age of AI – Navigating the Double-Edged Sword | 2025</li>
+        <li>1st Regional Blockchain Conference | 2024</li>
+        <li>Innovate, Educate, and Elevate with Blockchain | 2024</li>
+        <li>Cyber Resilience in the AI Era | 2024</li>
+      </ul>
+      <ul>
+        <h3>Web Development & Tools</h3>
+        <li>Get It Done: Build a Foundation with Version Control | 2024</li>
+        <li>SEO Rank & Rise: The Beginner’s Blueprint to Web Winning | 2024</li>
+      </ul>
+      <ul>
+        <h3>Technology & Innovation</h3>
+        <li>SOC Research Colloquium 2025: Innovations at the Intersections – Empowering the Future through Computing, Creativity, and Security | 2025</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
